@@ -1,3 +1,4 @@
-const nodeCliHandleError = require('./index.js');
+const handleError = require("./index.js");
 
-nodeCliHandleError();
+const err = new Error([`Something went wrong!`]);
+handleError(`Got an error`, err);
